@@ -1,0 +1,62 @@
+{
+  "name": "accenture-server",
+  "version": "1.0.0",
+  "description": "Application server for Accenture assignment",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production",
+    "start": "webpack --mode production && node ./server/app.js",
+    "start-local": "node ./server/app.js",
+    "variables": "NODE_ENV='development' RDS_USERNAME='accenture_user' RDS_HOSTNAME='accenture-db.cbxqpbzf9v3h.us-east-2.rds.amazonaws.com' RDS_PASSWORD='accenture123' RDS_PORT='3306' RDS_DB_NAME='accenture' "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rvind92@bitbucket.org/rvind92/accenture-server.git"
+  },
+  "keywords": [
+    "accenture"
+  ],
+  "author": "Aravind Krishna",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/rvind92/accenture-server#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.17.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "^3.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "install": "^0.12.2",
+    "mini-css-extract-plugin": "^0.6.0",
+    "npm": "^6.9.0",
+    "react-router-dom": "^5.0.1",
+    "redux-promise": "^0.6.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}
